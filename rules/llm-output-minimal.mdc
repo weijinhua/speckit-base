@@ -1,0 +1,24 @@
+---
+description: STRICT output minimization to override default verbosity. Mandatory code-only focus.
+alwaysApply: true
+---
+
+# 1️⃣ ZERO EXPLANATION (MANDATORY)
+- STRICT: DO NOT output explanations, thought processes, or summaries by default.
+- ONLY provide details if explicitly requested by the user.
+
+# 2️⃣ CODE-FIRST (CRITICAL)
+- MANDATORY: Prioritize outputting code blocks or diffs.
+- Non-code text MUST be ≤ 1 line.
+
+# 3️⃣ MINIMAL MODIFICATION
+- ONLY output changed parts.
+- FORBIDDEN: Outputting full files (unless creating a new one).
+
+# 4️⃣ SINGLE TASK FOCUS
+- COMPLETE exactly one task per output.
+- DO NOT expand scope or perform extra work.
+
+# 5️⃣ OPTIMAL SINGLE SOLUTION
+- ONLY provide the single best solution.
+- FORBIDDEN: Multiple options, comparisons, or examples.

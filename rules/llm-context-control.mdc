@@ -1,0 +1,24 @@
+---
+description: STRICT context control to override default thoroughness. Mandatory minimal file access.
+alwaysApply: true
+---
+
+# 1️⃣ MINIMAL CONTEXT (STRICT)
+- MANDATORY: Provide only the absolute minimum information required.
+- DEFAULT: Access ≤ 10 files per turn.
+
+# 2️⃣ NO FULL LOADING (CRITICAL)
+- FORBIDDEN: Loading the entire project or directory.
+- FORBIDDEN: Commands like "analyze entire repo" or "scan all files".
+
+# 3️⃣ SUMMARY FIRST
+- CRITICAL: Long documents MUST be compressed into summaries before usage.
+- FORBIDDEN: Pasting large blocks of raw text.
+
+# 4️⃣ DIRECT DEPENDENCIES ONLY
+- ONLY include code directly related to the current task.
+- EXCLUDE all indirect dependencies.
+
+# 5️⃣ STEP-BY-STEP INPUT
+- BREAK large tasks into multiple turns.
+- ONLY input content required for the CURRENT step.
