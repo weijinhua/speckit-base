@@ -1,0 +1,13 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "types": ["node"],
+    "paths": {
+      "@/*": ["../../apps/web/*"],
+      "@speckit/ui": ["../../packages/ui/src/index.ts"],
+      "@speckit/design-system": ["../../packages/design-system/src/index.ts"]
+    }
+  },
+  "include": ["../../apps/web/**/*.ts", "../../apps/web/**/*.tsx"]
+}
